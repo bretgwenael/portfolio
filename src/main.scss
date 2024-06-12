@@ -1,0 +1,34 @@
+@import './sass/base/reset';
+@import './sass/base/typography';
+@import './sass/components/animation';
+@import './sass/components/button';
+@import './sass/components/loader';
+@import './sass/utils/variables';
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: grey;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: black;
+  }
+
+  footer {
+    background-color: black;
+  }
