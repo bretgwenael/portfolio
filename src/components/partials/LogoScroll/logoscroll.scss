@@ -1,0 +1,39 @@
+.scroller {
+  max-width: 600px;
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+
+  &__inner {
+      display: flex;
+      padding-block: 1rem;
+      flex-wrap: nowrap;
+      gap: 1rem;
+      width: max-content;
+      animation: scroll 100s reverse linear infinite;
+      animation-delay: 1s;
+
+      &:hover {
+          animation-play-state: paused;
+      }
+
+      svg {
+          height: 50px;
+          margin: 0 40px;
+          cursor: pointer;
+          transition: 300ms;
+          filter: grayscale(0.2);
+
+          &:hover, &:focus, &:active {
+              transform: scale(1.1);
+              filter: saturate(1.5);
+          }
+      }
+  }
+}
+
+@keyframes scroll {
+  to {
+      transform: translate(calc(-50% - 0.5rem));
+  }
+}

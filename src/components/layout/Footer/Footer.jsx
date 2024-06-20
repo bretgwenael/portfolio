@@ -68,7 +68,7 @@ function Footer() {
                 </a>
             </div>
             <div className="copyright">
-                 Copyright © 2024 GwenProg. All Rights Reserved.
+                 Copyright © 2024. All Rights Reserved.
             </div>
         </footer>
     );
