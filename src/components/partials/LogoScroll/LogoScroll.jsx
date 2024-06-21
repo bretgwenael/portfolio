@@ -30,7 +30,7 @@ function LogoScroll() {
     }, []);
 
     return (
-        <>
+        <div className='skills'>
           <h2>Skills</h2>
             <div className="scroller" data-direction="right" data-speed="slow">
                 <div className="scroller__inner">
@@ -39,7 +39,8 @@ function LogoScroll() {
                     ))}
                 </div>
             </div>
-        </>
+        </div>
+        
     );
 }
 

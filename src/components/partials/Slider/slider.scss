@@ -1,9 +1,11 @@
 .container {
-    position: relative;
-    margin: 40px;
-    width: 800px;
-    height: 600px;
-  }
+  position: relative;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 800px;
+  height: 60vh;
+  max-height: 600px;
+}
   
   .container .slide .item {
     width: 200px;
@@ -40,7 +42,6 @@
     left: calc(50% + 440px);
   }
   
-  /* here n = 0, 1, 2, 3,... */
   .slide .item:nth-child(n + 6) {
     left: calc(50% + 660px);
     opacity: 0;
@@ -49,7 +50,7 @@
   .item .content {
     position: absolute;
     top: 50%;
-    left: 100px;
+    left: 50px;
     width: 300px;
     text-align: left;
     color: #eee;
@@ -63,7 +64,9 @@
   }
   
   .content .name {
-    font-size: 40px;
+    -webkit-text-fill-color:black;
+    -webkit-text-stroke: 1px #fff;
+    font-size: 50px;
     text-transform: uppercase;
     font-weight: bold;
     opacity: 0;
@@ -71,6 +74,8 @@
   }
   
   .content .des {
+    color: white;
+    font-size: 25px;
     margin-top: 10px;
     margin-bottom: 20px;
     opacity: 0;
@@ -119,4 +124,12 @@
   .button button:hover {
     background: #ababab;
     color: #fff;
+  }
+
+  
+
+  @media screen and (max-width: 768px) {
+    .slide .item:nth-child(n + 3) {
+      display: none;
+    }
   }

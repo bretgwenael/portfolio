@@ -1,6 +1,7 @@
 import Slider from "../../partials/Slider/Slider"
 import Info from "../../partials/Info/Info";
 import LogoScroll from "../../partials/LogoScroll/LogoScroll";
+import Timeline from "../../partials/Timeline/Timeline"
 import './home.scss';
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
           </section>
           <section className='skills-container'>
           <h1>Competences</h1>
+          <Timeline />
           <LogoScroll />
           </section>
         </main>
