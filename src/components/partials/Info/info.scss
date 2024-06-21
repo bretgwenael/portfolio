@@ -7,7 +7,6 @@
 
 .header {
     position: relative;
-    padding-top: 2rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -15,7 +14,7 @@
 }
 
 .header .content h2 {
-    margin-bottom: 1rem;
+    margin: 1rem;
     color: #fff;
     font-size: 3rem;
     font-weight: 700;
@@ -27,7 +26,7 @@
 }
 
 .header .content p{
-    margin-bottom: 2rem;
+    margin: 2rem;
     color: #ccc;
 }
 
@@ -36,9 +35,12 @@
 }
 
 .header .image img {
-    max-width: 500px;
-    margin: auto;
-
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    margin: auto; 
+    padding: 20px;
+    border-radius: 50px;
 }
 
 @media screen and (max-width: 768px) {
