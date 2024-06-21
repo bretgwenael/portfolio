@@ -5,12 +5,9 @@ function Info() {
     return (
         <div className="header">
           <div className="content">
-            <span className="blur"></span>
-            <span className="blur"></span>
-            <h4>CREATE YOUR SITE LIKE A PRO</h4>
-            <h2>Hi, I'm <span>Gwen</span>, Web Developer</h2>
+            <h2>Bonjour je suis <span>Gwen</span>, Developeur Web</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quas laudantium aliquid! Quos voluptatem consequatur eaque facilis facere aliquid architecto. Aut quidem velit rerum rem odio aliquam quas, ratione vel?
+            Je suis en reconversion professionnelle vers le développement web. Actuellement en fin de formation, je suis passionné par la création de solutions numériques innovantes. Découvrez ici mes projets et n'hésitez pas à me contacter pour toute collaboration !
             </p>
         </div>
         <div className="image">

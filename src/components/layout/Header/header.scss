@@ -18,10 +18,12 @@ nav {
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease-in-out;
+    
 
     li {
         padding: 0 20px;
         position: relative;
+        list-style-type: none;
     }
 }
 
@@ -31,13 +33,13 @@ nav {
     
 
     &:hover {
-        color: lightcoral;
+        color: blue;
 
         &::after {
             content: "";
             width: 60%;
             height: 2px;
-            background: lightcoral;
+            background: blue;
             position: absolute;
             bottom: -4px;
             left: 20px;
@@ -77,11 +79,25 @@ nav {
 
 
     .navbar.open {
-         right: 0px;
+         right: 0;
     }
     
 
     .toggle-span {
-        display: block;
+        display: flex;
+        position: inherit;
+        top: 55px; 
+        right: 80px; 
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 1000;
     }
+    
+    .toggle-span.open {
+        display: flex;
+        position: fixed;
+        font-size: 2rem;
+    }
+
+    
 }

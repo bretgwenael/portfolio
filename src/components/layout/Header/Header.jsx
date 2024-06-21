@@ -1,5 +1,5 @@
+import { Link } from 'react-scroll';
 import { useState } from "react";
-import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import logo from "../../../assets/CyberPunkPanda.png";
@@ -15,26 +15,26 @@ function Header() {
     return (
         <header>
             <div className='header-logo'>
-                <Link to="/" aria-label='Go to home page'>
+                <a href="/" aria-label='Go to home page'>
                     <img src={logo} alt="logo panda du site" />
-                </Link>
+                </a>
             </div>
             <nav>
                 <ul className={`navbar ${isOpen ? 'open' : ''}`}>
-                    <li><Link className='nav-link'>Presentation</Link></li>
-                    <li><Link className='nav-link'>Projets</Link></li>
-                    <li><Link className='nav-link'>Competences</Link></li>
-                </ul>   
-            </nav>
-            <span 
-                    className='toggle-span' 
-                    onClick={toggleNavbar} 
-                    aria-label={isOpen ? 'Close navigation' : 'Open navigation'}
+                    <li><Link to="presentation-section" spy={true} smooth={true} duration={700} onClick={toggleNavbar} className='nav-link'>Présentations</Link></li>
+                    <li><Link to="projects-section" spy={true} smooth={true} duration={700} onClick={toggleNavbar} className='nav-link'>Projets</Link></li>
+                    <li><Link to="skills-section" spy={true} smooth={true} duration={700} onClick={toggleNavbar} className='nav-link'>Compétences</Link></li>
+                </ul>
+                <span
+                    className={`toggle-span ${isOpen ? 'open' : ''}`}
+                    onClick={toggleNavbar}
+                    aria-label={isOpen ? 'Fermer la navigation' : 'Ouvrir la navigation'}
                 >
                     <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
                 </span>
+            </nav>
         </header>
-    )
+    );
 }
 
 export default Header;

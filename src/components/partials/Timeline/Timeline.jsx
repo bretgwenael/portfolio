@@ -1,4 +1,6 @@
 import './timeline.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -8,11 +10,11 @@ function Timeline() {
            <VerticalTimeline>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    contentStyle={{ background: 'rgb(10, 48, 169)', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
     date="2023 - present"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    
+    iconStyle={{ background: 'rgb(217, 43, 43)', color: '#fff' }}
+    icon={<FontAwesomeIcon icon={faGraduationCap} />}
   >
     <h3 className="vertical-timeline-element-title">Formation OpenClassrooms</h3>
     <p>
@@ -21,10 +23,10 @@ function Timeline() {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    contentStyle={{ background: 'rgb(10, 48, 169)', color: '#fff' }}
     date="2020 - 2022"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    
+    icon={<FontAwesomeIcon icon={faBriefcase} />}
   >
     <h3 className="vertical-timeline-element-title">Technicien d'exploitation</h3>
     <h4 className="vertical-timeline-element-subtitle">ASTEO Toulouse</h4>
@@ -34,10 +36,10 @@ function Timeline() {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    contentStyle={{ background: 'rgb(10, 48, 169)', color: '#fff' }}
     date="2016 - 2019"
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    
+    icon={<FontAwesomeIcon icon={faBriefcase} />}
   >
     <h3 className="vertical-timeline-element-title">Technicien préleveur</h3>
     <h4 className="vertical-timeline-element-subtitle">Bioclin Ile de france</h4>
@@ -47,20 +49,20 @@ function Timeline() {
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    contentStyle={{ background: 'rgb(10, 48, 169)', color: '#fff' }}
     date="2014 - 2016"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    
+    iconStyle={{ background: 'rgb(217, 43, 43)', color: '#fff' }}
+    icon={<FontAwesomeIcon icon={faGraduationCap} />}
   >
     <h3 className="vertical-timeline-element-title">BTS Métiers de l’eau</h3>
     <h4 className="vertical-timeline-element-subtitle">Lycée Pierre Gilles de Gennes Paris</h4>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
-    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    contentStyle={{ background: 'rgb(10, 48, 169)', color: '#fff' }}
     date="2007 - 2011"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-    
+    iconStyle={{ background: 'rgb(217, 43, 43)', color: '#fff' }}
+    icon={<FontAwesomeIcon icon={faGraduationCap} />}
   >
     <h3 className="vertical-timeline-element-title">Baccalauréat Scientifique</h3>
     <h4 className="vertical-timeline-element-subtitle">Lycée Gabriel Faure Tournon-sur-Rhône</h4>
