@@ -24,10 +24,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 20px 80px;
     background-color: black;
+    border-bottom: 2px solid grey;
+    margin-bottom: 20px;
   }
 
   footer {
+    border-top: 2px solid grey;
     background-color: black;
+    width: 100%;
   }

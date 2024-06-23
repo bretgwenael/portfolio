@@ -10,7 +10,7 @@ function Slider() {
   const [selectedItem, setSelectedItem] = useState(null);
 
   useEffect(() => {
-    Modal.setAppElement('#root'); // Assurez-vous que #root est l'élément principal de votre application
+    Modal.setAppElement('#root');
   }, []);
 
   const handleNextClick = () => {

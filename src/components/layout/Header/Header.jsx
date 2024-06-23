@@ -2,7 +2,7 @@ import { Link } from 'react-scroll';
 import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import logo from "../../../assets/CyberPunkPanda.png";
+import logo from "../../../assets/CyberPunkPanda.webp";
 import "./header.scss";
 
 function Header() {
